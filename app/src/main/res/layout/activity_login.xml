@@ -4,53 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sign_UpActivity">
-
-
-    <EditText
-        android:id="@+id/etemail"
-        android:layout_width="380dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="185dp"
-        android:alpha="0.5"
-        android:background="@drawable/et_corner"
-        android:hint="   Name@email.com "
-        android:maxLines="1"
-        android:textAppearance="@style/name_surnam"
-        android:textColorHint="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.612"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".LoginActivity">
 
     <TextView
-        android:id="@+id/textView_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:layout_marginRight="35dp"
-        android:text="Full Name "
-        android:textColor="#529AD9"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.098"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/etName"
-        android:layout_width="380dp"
-        android:layout_height="70dp"
-        android:alpha="0.5"
-        android:background="@drawable/et_corner"
-        android:hint="   Enter your full name "
-        android:maxLines="1"
-        android:layout_marginTop="40dp"
-
-        android:textAppearance="@style/name_surnam"
-        android:textColorHint="@color/black"
-        android:textSize="20dp"
+        android:id="@+id/startTakingTV"
+        android:layout_width="310dp"
+        android:layout_height="69dp"
+        android:gravity="center"
+        android:text="log in into your account  "
+        android:textColor="@color/start_taking_txt_clr"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -61,21 +25,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="145dp"
+        android:layout_marginTop="88dp"
         android:text="Email"
         android:textColor="#529AD9"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <EditText
-        android:id="@+id/etPass"
+        android:id="@+id/etemailLogin"
         android:layout_width="380dp"
         android:layout_height="70dp"
-        android:layout_marginTop="316dp"
+        android:layout_marginTop="132dp"
+        android:alpha="0.5"
+        android:background="@drawable/et_corner"
+        android:hint="   Name@email.com "
+        android:maxLines="1"
+        android:textAppearance="@style/name_surnam"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPassLogin"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="272dp"
         android:alpha="0.5"
         android:background="@drawable/et_corner"
         android:hint="   Create strong password  "
@@ -85,7 +66,7 @@
         android:textColorHint="@color/black"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -94,44 +75,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="228dp"
         android:text="Password "
         android:textColor="#529AD9"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_signUp"
+        android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="44dp"
         android:background="@drawable/buton_bg"
         android:paddingHorizontal="65dp"
         android:paddingVertical="15dp"
-        android:text="Sign Up"
+        android:text="Login"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPass" />
-
-    <TextView
-        android:id="@+id/loginTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
-        android:text="Already have an account? log in "
-        android:textColor=" #529AD9"
-        android:textSize="17sp"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_signUp" />
+        app:layout_constraintTop_toBottomOf="@+id/etPassLogin" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

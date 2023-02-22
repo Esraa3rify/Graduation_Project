@@ -4,11 +4,14 @@
 
     <item
         android:icon="@drawable/vectorfirt"
-        android:title="" />
+        android:title=""
+        android:id="@+id/activity"/>
     <item android:title=""
+        android:id="@+id/home"
      android:icon="@drawable/vectorse"
         />
     <item android:title=""
+        android:id="@+id/community"
         android:icon="@drawable/vectorthir"
         />
 </menu>

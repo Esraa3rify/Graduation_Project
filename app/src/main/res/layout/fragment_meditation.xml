@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-
+android:id="@+id/med_layout"
     tools:context=".meditationFragment">
 
 
@@ -27,7 +27,11 @@
         android:layout_marginTop="330dp"
 
         />
-
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_courses"

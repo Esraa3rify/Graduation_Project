@@ -29,11 +29,17 @@ public class App_name_Activity extends AppCompatActivity {
         text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(App_name_Activity.this, Sign_UpActivity.class);
+                Intent intent = new Intent(App_name_Activity.this, Start_Taking_Actions_Activity.class);
                 startActivity(intent);
             }
         });
 
 
     }
-}
+
+
+
+
+
+    }
+
